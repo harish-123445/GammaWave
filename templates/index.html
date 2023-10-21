@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>K-Nearest Neighbors (KNN) Prediction</title>
+</head>
+
+<body>
+    <header>
+        <h1>K-Nearest Neighbors (KNN) Prediction</h1>
+    </header>
+
+    <div class="container">
+        <form action="/predict" method="post">
+            <div class="input-row">
+                <label for="fLength">Feature Length:</label>
+                <input type="text" name="fLength" id="fLength" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fWidth">Feature Width:</label>
+                <input type="text" name="fWidth" id="fWidth" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fSize">Feature Size:</label>
+                <input type="text" name="fSize" id="fSize" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fConc">Feature Concentration:</label>
+                <input type="text" name="fConc" id="fConc" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fConc1">Feature Concentration 1:</label>
+                <input type="text" name="fConc1" id="fConc1" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fAsym">Feature Asymmetry:</label>
+                <input type="text" name="fAsym" id="fAsym" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fM3Long">Feature M3 Long:</label>
+                <input type="text" name="fM3Long" id="fM3Long" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fM3Trans">Feature M3 Trans:</label>
+                <input type="text" name="fM3Trans" id="fM3Trans" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fAlpha">Feature Alpha:</label>
+                <input type="text" name="fAlpha" id="fAlpha" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="input-row">
+                <label for="fDist">Feature Distance:</label>
+                <input type="text" name="fDist" id="fDist" class="wide-textbox" required autocomplete="off">
+            </div>
+
+            <div class="center">
+                <input type="submit" value="Predict" class="submit-button">
+            </div>
+        </form>
+
+        {% if knn_prediction %}
+            <h2>KNN Prediction: {{ knn_prediction }}</h2>
+        {% endif %}
+
+        {% if pate_prediction %}
+            <h2>PATE Prediction: {{ pate_prediction }}</h2>
+        {% endif %}
+    </div>
+
+    <footer>
+        &copy; 2023 Gamma Classifier
+    </footer>
+</body>
+
+</html>

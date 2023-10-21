@@ -1,0 +1,113 @@
+/* Reset some default styles and apply a stylish font */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Global styling */
+body {
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* Form styling */
+form {
+    text-align: center; /* Center-align the form */
+    padding: 20px;
+}
+
+.input-row {
+    margin-bottom: 20px;
+}
+
+.input-row label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+input.wide-textbox {
+    width: 60%; /* Reduced width to 60% */
+    padding: 12px;
+    border: 6px solid #ecf0f1;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+
+input.wide-textbox:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.submit-button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #3498db;
+}
+
+footer:hover p {
+    color: #ecf0f1;
+}
