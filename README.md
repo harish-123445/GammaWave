@@ -16,4 +16,6 @@
 
 OUTPUT IMAGES 
 
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/harish-123445/GammaWave/blob/main/images/image1.png)https://github.com/harish-123445/GammaWave/blob/main/images/image1.png?raw=true)
+![plot](images/image1.png)
+![plot](images/image2.png)
+
