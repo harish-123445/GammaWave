@@ -15,3 +15,5 @@
 🚀 This multifaceted approach underscores my commitment to ethical data science practices while innovating in model deployment and user experience through Flask's dynamic front-end capabilities.
 
 OUTPUT IMAGES 
+
+![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/harish-123445/GammaWave/blob/main/images/image1.png)https://github.com/harish-123445/GammaWave/blob/main/images/image1.png?raw=true)
